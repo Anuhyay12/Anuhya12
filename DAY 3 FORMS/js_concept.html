@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3>Working with JS</h3>
+        <hr/>
+        <input type="button" value="Updated data" onclick="fn_updateData()"/><!--here, button is for client side operation-->
+
+        <p id="p1"></p>
+
+        <img src="IMMAP..png" id="img1"/>
+
+        <select id="de">
+            <option>img1</option>
+            <option>img2</option>
+        </select>
+        
+        
+
+        <script>
+            function fn_updateData()
+            {
+                var imgObj = document.getElementById("img1");
+            imgObj.src = "IMge2..png";//when clicked, updates image to other image
+            }
+            var paraObj = document.getElementById("p1");
+            paraObj.innerText = "Welcome to JavaScript";//for para
+
+            var imgObj = document.getElementById("img1");
+            imgObj.src = "IMMAP..png";// for image (change object name, id name)
+
+            var imgObj = document.getElementById("de");
+            imgObj.src = ObjSelec.value;
+
+        </script>
+    </body>
+</html>

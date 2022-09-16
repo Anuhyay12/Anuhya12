@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product page</title>
+    </head>
+    <body>
+        <form method="post" action="random.php">
+            <fieldset>
+                <label>
+                    Product Name : 
+                </label>
+                <input type="text" id="pn" name="pn"/>
+            </br> </br>
+            <label>
+               Unit Price :
+            </label>
+            <input type="number" id="un" name="un"/>
+        </br> </br>
+        <label>
+            Quantity : 
+        </label>
+        <input type="number" id="Qn" name="Qn"/>
+    </br> </br>
+    <input type="button" value="Get Total" onclick="total()"/>
+           
+
+        </form>
+        <p id="p1"></p>
+        <script>
+            function total()
+            {
+                var paraObj=document.getElementById("un");
+                var Obj1=document.getElementById("Qn");
+                var Obj2=document.getElementById("p1");
+              
+                Obj2.innerText="Total Amount : "+Obj1.value*paraObj.value;
+                Obj2.innerText="Total Amount : "+(parseInt(Obj1.value)+parseInt(paraObj.value));
+
+            }
+        </script>
+         </fieldset>
+    </body>
+</html>

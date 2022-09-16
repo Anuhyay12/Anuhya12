@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>User page</title>
+    </head>
+    <body>
+        <form action="update.asp" method="post">
+            <label>User Name:</label>
+        <input type="text" id="un" name="un"/>
+
+        <input type="button"value="submit" onclick="update()"/>
+<p id="x"></p>
+        </form>
+        
+        <script>
+            function update()
+            {
+                var paraObj = document.getElementById("un");
+                var obj1=document.getElementById("x");
+                obj1.innerText = "Welcome to " + paraObj.value;
+            }
+        </script>
+
+    </body>
+</html>
