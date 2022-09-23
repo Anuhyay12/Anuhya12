@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>
+            Bank account form
+        </title>
+        <style>
+            .required:after {
+  content: '*';
+  color: #EF5F5F;
+}
+        </style>
+    </head>
+    <body>
+        <h4 style="text-align:center;">Account closing form</h4>
+        <hr/>
+
+        <form id="from1" method="GET" action="bank.php">
+            <label>Name on Account :<span style="color:red"> *</span></label>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="te" required="required"/><br/>
+                        <span>First Name</span>
+                    </td>
+                    <td>
+                        <input type="text" id="te" required="required"/><br/>
+                        <span>Last Name</span>
+                    </td>
+                </tr>
+
+            </table> </br> 
+
+            <table>
+
+                   <tr>
+
+                    <td>
+                        <label>Account Number <span style="color:red"> *</span></label>
+                    </br> <input type="textbox"id="tb"required/></br>
+                    </td>
+
+                    <td style="padding-left:80px;padding-top:30px">
+                        <label><b>Account type</b></label><br/>
+                        <input type="radio"name="check"/>
+                        <label>Checkings</label></br>
+                        <input type="radio"name="chck"/>
+                        <label>Savings</label>
+                    </td>
+
+                   </tr>
+            
+        </table>
+        <label>
+          Address : <span style="color:red">*</span></label></br>
+            <input type="text" id="te" required="required"/><br/>
+            <span>Street Address</Address></span><br/><br/>
+            <input type="text" id="te" required="required"/><br/>
+            <span>Street Address Line2</Address></span>
+
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="te" required="required"/><br/>
+                        <span>City</span>
+                    </td>
+                    <td>
+                        <input type="text" id="te" required="required"/><br/>
+                        <span>State/Province</span>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <input type="text" id="te" required="required"/><br/>
+                        <span>Postal/Zip Code</span>
+                    </td> 
+                    <td>
+
+                        <select placeholder="ple">
+                            <option>United states</option>
+                            <option>Australia</option>
+                            <option>America</option>
+                        </select><br/>
+                        <span>Country</span>
+                    </td>
+                </tr>
+            </table><br/>
+            <label>Company Name</label><br/>
+            <input type="text"name="tx"/>
+<br/><br/>
+            <label>Telephone number<span style="color:red">*</span></label>
+          <table>
+            <tr>
+                <td>
+                    <input type="number" id="te" required="required"/><br/>
+                    <span>Area code</span>
+                </td>
+                <td>
+                    <input type="number" id="te" required="required"/><br/>
+                    <span>Phone number</span>
+                </td>
+                <td style="padding-left:60px">
+                    <input type="radio"name="check"/>
+                    <label>Mobile</label></br>
+                    <input type="radio"name="check"/>
+                    <label>Work</label></br>
+                    <input type="radio"name="chck"/>
+                    <label>Home</label>
+                </td>
+
+            </tr>
+          </table>
+            </br> 
+        </form>
+    </body>
+</html>
