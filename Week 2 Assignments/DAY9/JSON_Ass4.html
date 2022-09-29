@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Parsing</title>
+    </head>
+    <body>
+       <h1>Working with JSON</h1>
+       <br/>
+       <hr/>
+       <input type="button"value="Get user data"onclick="fn_getdata()"/>
+       <p id="para1"></p>
+       <p id="para2"></p>
+       <p id="para3"></p>
+       <p id="para4"></p>
+       <p id="para5"></p>
+       <img id="e1"/>
+<script>
+    function fn_getdata(){
+        var  str  ='{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://img.freepik.com/free-photo/young-african-american-woman-isolated-yellow-facial-expression_155003-21002.jpg"}';
+    var obj=JSON.parse(str);
+   document.getElementById("para1").innerText= "User Id : "+obj.id;
+   document.getElementById("para2").innerText= "First Name : "+obj.first_name;
+   document.getElementById("para3").innerText= "Lat Name : "+obj.last_name;
+   document.getElementById("para4").innerText= "Email : "+obj.email;
+   document.getElementById("para5").innerText= "Avatar : ";
+
+   e1.src=obj.avatar;
+    }
+	
+
+</script>
+       
+
+    </body>
+</html>

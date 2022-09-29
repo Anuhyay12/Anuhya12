@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <h1>Working with JSON</h1>
+        <form action="" method="POST"style="width:500px;height: 500px;border:2px solid black;padding:15px">
+            <label>Empno : </label>
+            <input type="number"name="no"id="eno"/><br/><br/>
+            <label>Ename : </label>
+            <input type="text"name="no"id="ena"/><br/><br/>
+            <label>Job : </label>
+            <input type="text"name="te"id="tex"/><br/><br/>
+            <label>Salary : </label>
+            <input type="number"name="num"id="sal"/><br/><br/>
+           
+            <input type="button" value="Convert to JSON" onclick="fn_convertfromobjtoJSON()"/>
+            <input type="button" value="value" onclick="fn_convertfromJSONtoobj()"/>
+            <p id="para"></p>
+            <script>
+                function fn_convertfromobjtoJSON(){
+                    var empno=document.getElementById("eno");
+                    var empname=document.getElementById("ena");
+                    var empjob=document.getElementById("tex");
+                    var empsal=document.getElementById("sal");
+                    var obj={empno:parseInt(empno.value),ename:empname.value,job:empjob.value,salary:parseInt(empsal.value)};
+                    var str=JSON.stringify(obj);
+                    var p=document.getElementById("para");
+                    p.innerText=str;
+                }
+                function fn_convertfromJSONtoobj(){
+                   var string='{"empno":12,"ename":"nate","job":"Analyst","salary":40000}';
+                  var obj=JSON.parse(string);
+                  eno.value=obj.empno;
+                  ena.value=obj.ename;
+                  tex.value=obj.job;
+                  sal.value=obj.salary;
+
+                }
+            </script>
+        </form>
+    </body>
+</html>
