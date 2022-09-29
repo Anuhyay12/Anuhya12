@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+			<link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"  rel="stylesheet"  />
+			<script  src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"> </script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <script>
+		function fn_saveData()
+		{
+			//  Code to save the data in server  :   by send ajax call to server
+            var obj=document.getElementById("uid");
+            var obj2=document.getElementById("passw");
+           
+
+            if(obj2.value=="anuhya")
+            {
+                alert("Welcome "+ obj.value);
+            }
+            else{
+                alert("Invalid user");
+            }
+
+
+			  
+			  // Closing bootstrap modal box using JavaScript
+			   var modalDomObj = document.getElementById('exampleModal');
+				var modalBSObj = bootstrap.Modal.getInstance(modalDomObj);
+				modalBSObj.hide();
+		}  
+  </script>
+  </head> 
+  <body>
+    <div class="container  text-center border   m-2">
+        <p  class="display-5"> 
+        <i class="bi bi-bootstrap-fill"></i>
+        Modals in Bootstrap </p>
+</div>
+
+<!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" 
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Show Login form
+    </button>
+
+<!-- Modal -->
+<div class="modal" id="exampleModal">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+
+<div class="modal-body  text-primary">
+<form>
+    <label>Username :</label>
+    <input type="text"id="uid"name="username"/><br/><br/>
+    <label>Password :</label>
+    <input type="text"id="passw"name="pwd"/>
+    
+
+</form>
+</div>
+
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+  <button type="button"  onclick="fn_saveData()" class="btn btn-primary">Save changes</button>
+</div>
+
+</div>
+</div>
+</div>
+  </body>
+  </html>
