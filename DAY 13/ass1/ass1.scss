@@ -1,0 +1,24 @@
+@use  'header';
+.box
+{
+    border: 1px solid darkgray;
+    padding : 10px;
+    margin : 5px;   
+}
+$baseFont: 3px;
+@for $i from 1 to 7
+{
+    .box-s#{$i}
+    {
+        font-size:  $baseFont * $i *5;
+
+        @if( $i < 4)
+        {
+            background-color: red;
+        }
+        @else
+        {
+            background-color: green;
+        }
+    }
+}

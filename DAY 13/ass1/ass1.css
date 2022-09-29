@@ -1,0 +1,44 @@
+.header-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: aqua;
+  border: 1px solid pink;
+}
+
+.box {
+  border: 1px solid darkgray;
+  padding: 10px;
+  margin: 5px;
+}
+
+.box-s1 {
+  font-size: 15px;
+  background-color: red;
+}
+
+.box-s2 {
+  font-size: 30px;
+  background-color: red;
+}
+
+.box-s3 {
+  font-size: 45px;
+  background-color: red;
+}
+
+.box-s4 {
+  font-size: 60px;
+  background-color: green;
+}
+
+.box-s5 {
+  font-size: 75px;
+  background-color: green;
+}
+
+.box-s6 {
+  font-size: 90px;
+  background-color: green;
+}/*# sourceMappingURL=ass1.css.map */
